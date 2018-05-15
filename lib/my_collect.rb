@@ -5,6 +5,8 @@ def my_collect(array)
     while i < array.length
       collection << yield(array[i])
       i += 1
+    end
+    collection
   else
     puts "Sorry, no block given!"
   end
